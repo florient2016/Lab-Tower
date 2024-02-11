@@ -1,8 +1,11 @@
 ---
 # tasks file for radiusconf
+- name: Affichage echo
+  debug:
+    msg: "Welcomme to AAP 2"
 - name: Copy du fichier azcopy
   ansible.builtin.copy:
-    scr: azcopy.exe
+    src: azcopy.exe
     dest: /home/rhel/
 - name: Apllication du fichier de conf
   ansible.builtin.template:
