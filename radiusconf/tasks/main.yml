@@ -1,0 +1,10 @@
+---
+# tasks file for radiusconf
+- name: Copy du fichier azcopy
+  ansible.builtin.copy:
+    scr: azcopy.exe
+    dest: /home/rhel/
+- name: Apllication du fichier de conf
+  ansible.builtin.template:
+    src: motd.j2
+    dest: /home/rhel/motd.txt

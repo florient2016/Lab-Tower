@@ -1,0 +1,9 @@
+Welcome to my web: {{ansible_facts['hostname'] }}
+Variable utiliser: {{ vars1 }}
+Addresse ip de la machine distant: {{ ansible_facts['default_ipv4']['address'] }}
+
+
+I have a file ed.conf with content: 
+client  data {
+ ipaddr  = 20.10.34.00/32 
+ Secret  = {{ secret }} }

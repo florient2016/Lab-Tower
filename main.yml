@@ -1,0 +1,4 @@
+- name: Execution du playbook
+  hosts: radius
+  roles:
+    - radiusconf
